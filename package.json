@@ -1,0 +1,15 @@
+{
+  "name": "framer-spotify-multiuser-starter",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vercel dev --listen 3000",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/kv": "latest"
+  },
+  "devDependencies": {}
+}
