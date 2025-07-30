@@ -1,14 +1,13 @@
 {
-  "name": "framer-spotify-multiuser-starter",
+  "name": "framer-spotify-upstash-starter",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
-  "license": "MIT",
   "scripts": {
-    "dev": "vercel dev --listen 3000",
+    "dev": "vercel dev",
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@vercel/kv": "latest"
+    "@upstash/redis": "latest"
   }
 }
