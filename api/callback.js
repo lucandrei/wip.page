@@ -48,7 +48,7 @@ export default async function handler(req, res) {
     } catch {}
 
     const publicId = `u_${Math.random().toString(36).slice(2, 8)}`;
-    await kv.hmset(`user:${publicId}`, {
+    await redis.hset(`user:${publicId}`, {
       refresh_token: refresh,
       display_name: display,
       created_at: Date.now().toString(),
