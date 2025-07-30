@@ -1,4 +1,4 @@
-import { kv } from "@vercel/kv";
+import { redis } from "../_redis.js";
 
 async function getAccessToken(refresh) {
   const res = await fetch("https://accounts.spotify.com/api/token", {
