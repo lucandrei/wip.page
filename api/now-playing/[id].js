@@ -21,7 +21,7 @@ async function getAccessToken(refresh) {
 export default async function handler(req, res) {
   try {
     const publicId = req.query.id;
-    const user = await kv.hgetall(`user:${publicId}`);
+    const user = await redis.hgetall(`user:${publicId}`);
     if (!user) {
       res.setHeader("Access-Control-Allow-Origin", "*");
       return res.status(404).json({ error: "Unknown user" });
