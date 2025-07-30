@@ -1,4 +1,4 @@
-import { kv } from "@vercel/kv";
+import { redis } from "./_redis.js";
 
 export default async function handler(req, res) {
   try {
